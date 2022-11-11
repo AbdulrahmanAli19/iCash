@@ -1,5 +1,6 @@
-package abdulrahman.ali19
+package abdulrahman.ali19.ui
 
+import abdulrahman.ali19.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 

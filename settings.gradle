@@ -3,6 +3,16 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        maven {
+            url  "https://cardinalcommerceprod.jfrog.io/artifactory/android"
+            credentials {
+                // Be sure to add these non-sensitive credentials in order to retrieve dependencies from
+                // the private repository.
+                username palpalUsername
+                password paypalPassword
+            }
+        }
+        maven { url "https://jitpack.io" }
     }
 }
 dependencyResolutionManagement {
@@ -10,6 +20,16 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url  "https://cardinalcommerceprod.jfrog.io/artifactory/android"
+            credentials {
+                // Be sure to add these non-sensitive credentials in order to retrieve dependencies from
+                // the private repository.
+                username palpalUsername
+                password paypalPassword
+            }
+        }
+        maven { url "https://jitpack.io" }
     }
 }
 rootProject.name = "I Cash"

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "582742738111",
+    "project_id": "icash-63888",
+    "storage_bucket": "icash-63888.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582742738111:android:75493b411265a11491f20a",
+        "android_client_info": {
+          "package_name": "abdulrahman.ali19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582742738111-vb39agtvu0rntqstlqq5kgopmit1mmui.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "abdulrahman.ali19",
+            "certificate_hash": "bed30ab9f289bbb358d4d04e571f30cb2e6d500b"
+          }
+        },
+        {
+          "client_id": "582742738111-rogaotnemqt2poqbhig9afo1mqi13iob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2Iy5TsVdmFiKvvtjOdSF-ezSsKHoXpJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582742738111-rogaotnemqt2poqbhig9afo1mqi13iob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
