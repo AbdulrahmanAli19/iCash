@@ -1,5 +1,7 @@
 package abdulrahman.ali19
 
+import abdulrahman.ali19.di.appModule
+import abdulrahman.ali19.util.Constants
 import android.app.Application
 import com.paypal.checkout.PayPalCheckout
 import com.paypal.checkout.config.CheckoutConfig
@@ -7,13 +9,22 @@ import com.paypal.checkout.config.Environment
 import com.paypal.checkout.config.SettingsConfig
 import com.paypal.checkout.createorder.CurrencyCode
 import com.paypal.checkout.createorder.UserAction
+import org.koin.android.ext.koin.androidContext
+import org.koin.android.ext.koin.androidLogger
+import org.koin.core.context.GlobalContext.startKoin
 
-class ICashApplication : Application(){
+class ICashApplication : Application() {
+
     override fun onCreate() {
         super.onCreate()
+        startKoin {
+            androidLogger()
+            androidContext(this@ICashApplication)
+            modules(appModule)
+        }
         val config = CheckoutConfig(
             application = this,
-            clientId = "ASPFY-r3ygRbyF7kXHekuQvYYyTG5oT6fhCjGDx6frMMPCrVBfb0XBzpSMSMq-LDDEpfE4jKtW06Q3dK",
+            clientId = Constants.PAYPAL_CLIENT_ID,
             environment = Environment.SANDBOX,
             returnUrl = "${BuildConfig.APPLICATION_ID}://paypalpay",
             currencyCode = CurrencyCode.USD,
