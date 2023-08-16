@@ -12,7 +12,8 @@ jobs:
       - name: Setup Java JDK
         uses: actions/setup-java@v3.12.0
         with:
-          java-version: 17
+          distribution: 'zulu'
+          java-version: '17'
       - name: Build with gradle
         run: ./gradlew build
       - name: Upload a Build Artifact
