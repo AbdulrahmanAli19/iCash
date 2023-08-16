@@ -1,4 +1,4 @@
-package abdulrahman.ali19.util
+package abdulrahman.core.util
 
 object Constants {
     const val  PAYPAL_CLIENT_ID =
