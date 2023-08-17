@@ -1,5 +1,5 @@
-<resources>
-    <string name="app_name">I Cash</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="PrivateResource">I Cash</string>
     <string name="sign_up">Sign Up</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last name</string>

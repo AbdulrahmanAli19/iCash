@@ -3,6 +3,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.devtools.ksp")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -11,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId = "abdulrahman.ali19"
-        minSdk = 21
+        minSdk = 23
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -57,6 +58,7 @@ dependencies {
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
     implementation(platform(libs.compose.bom))
+    implementation(libs.navigation.compose)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.ui)
     implementation(libs.ui.graphics)
@@ -90,7 +92,12 @@ dependencies {
     implementation(libs.ktor.content)
     implementation(libs.ktor.serialization)
 
-    implementation(libs.navigation.compose)
+    //Firebase
+    implementation(platform(libs.firebase))
+    implementation(libs.firebase.analytics)
+
+    implementation(libs.androidx.security.crypto)
+
 
     implementation(libs.splashscreen)
 
